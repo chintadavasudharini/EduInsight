@@ -16,7 +16,8 @@ artifacts/data/*.csv
 artifacts/data/*.db
 
 # Streamlit run cache
-.streamlit/
+.streamlit/*
+!.streamlit/config.toml
 
 # Testing and coverage
 .pytest_cache/

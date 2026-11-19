@@ -24,6 +24,8 @@ def render_page():
     with tab_overview:
         st.subheader("System Overview")
         st.markdown("""
+        **Platform Name:** EduInsight  
+        **Tagline:** *Understand Learning. Predict Performance. Improve Outcomes.*  
         **Project Title:** Student Performance Prediction and Learning Pattern Analysis
 
         **System Purpose:**

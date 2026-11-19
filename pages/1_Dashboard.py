@@ -1,7 +1,7 @@
 """
-Home Dashboard Module.
+Dashboard Module.
 Clean, modern overview of student performance predictions, cohort metrics,
-and academic tier distribution.
+and academic tier distribution for authenticated users.
 """
 
 import streamlit as st
@@ -21,29 +21,18 @@ from src.data.loader import prepare_dataset
 
 
 def render_page():
-    st.markdown('<div class="main-header">Student Performance & Learning Pattern Analysis</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">EduInsight Dashboard</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="sub-header">AI-driven academic outcome forecasting, behavioral cohort grouping, and early diagnostic insights.</div>',
+        '<div class="sub-header">Understand Learning. Predict Performance. Improve Outcomes.</div>',
         unsafe_allow_html=True,
     )
 
     df = prepare_dataset()
 
-    # User greeting / Sign In prompt
+    # User greeting
     if st.session_state.get("authenticated", False) and st.session_state.get("user"):
         user = st.session_state["user"]
-        st.success(f"👋 **Welcome, {user['name']}!** You are signed in. Use the left menu to explore the analytics and prediction modules.")
-    else:
-        st.info("💡 **Welcome to the Portal:** Please sign in or register to access individual prediction and analysis modules.")
-        c_btn1, c_btn2, _ = st.columns([1, 1, 3])
-        with c_btn1:
-            if st.button("🔑 Sign In", use_container_width=True):
-                st.session_state["nav_selection"] = "Login"
-                st.rerun()
-        with c_btn2:
-            if st.button("📝 Register Account", use_container_width=True):
-                st.session_state["nav_selection"] = "Register"
-                st.rerun()
+        st.success(f"👋 **Welcome back, {user['name']}!** You are signed in. Explore cohort metrics below or choose an analytics module from the sidebar.")
 
     # Metric Row
     c1, c2, c3, c4 = st.columns(4)

@@ -19,10 +19,11 @@ from src.utils.config import (
 )
 from src.data.loader import prepare_dataset
 from src.utils.auth_views import render_login_page, render_register_page
+from src.utils.welcome_page import render_welcome_page
 
 # Streamlit Page Configuration
 st.set_page_config(
-    page_title="Student Performance AI",
+    page_title="EduInsight",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -81,7 +82,8 @@ if not RAW_DATA_PATH.exists():
         prepare_dataset(n_samples=1500, seed=42)
 
 # Sidebar Branding
-st.sidebar.title("Student Analytics AI")
+st.sidebar.title("EduInsight")
+st.sidebar.caption("Understand Learning. Predict Performance. Improve Outcomes.")
 
 # Sidebar User Status / Logout
 if st.session_state["authenticated"] and st.session_state["user"]:
@@ -116,7 +118,7 @@ if not st.session_state["authenticated"]:
 else:
     # Authenticated menu: Dashboard and analytical modules
     nav_map = {
-        "Dashboard": "pages.1_Home_Dashboard",
+        "Dashboard": "pages.1_Dashboard",
         "Student Performance Prediction": "pages.2_Student_Performance_Prediction",
         "Dataset Explorer": "pages.3_Dataset_Explorer",
         "Regression Lab": "pages.4_Regression_Lab",
@@ -129,7 +131,7 @@ else:
         "Model Evaluation Lab": "pages.11_Model_Evaluation_Lab",
         "Fairness & Statistical Testing": "pages.12_Fairness_and_Statistical_Testing_Lab",
         "Model Monitoring & Drift": "pages.13_MLOps_and_Model_Monitoring",
-        "About System": "pages.14_About_Project_and_CO_Mapping",
+        "About System": "pages.14_About_System",
     }
     nav_options = list(nav_map.keys())
 
@@ -149,10 +151,8 @@ if not st.session_state["authenticated"]:
     elif st.session_state["nav_selection"] == "Register":
         render_register_page()
     else:
-        # Home Page
-        import importlib
-        home_module = importlib.import_module("pages.1_Home_Dashboard")
-        home_module.render_page()
+        # Home Page is the dedicated Welcome Page
+        render_welcome_page()
 else:
     target_module_name = nav_map[st.session_state["nav_selection"]]
     import importlib

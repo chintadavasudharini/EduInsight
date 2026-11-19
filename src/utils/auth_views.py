@@ -13,7 +13,7 @@ from src.utils.auth import register_user, authenticate_user
 def render_register_page():
     st.markdown('<div class="main-header">Create an Account</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="sub-header">Register your credentials to access the analytics system.</div>',
+        '<div class="sub-header">Join EduInsight to understand learning patterns and predict outcomes.</div>',
         unsafe_allow_html=True,
     )
 
@@ -85,7 +85,7 @@ def render_register_page():
 def render_login_page():
     st.markdown('<div class="main-header">Account Login</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="sub-header">Sign in to your account to access the system dashboard.</div>',
+        '<div class="sub-header">Sign in to EduInsight to access your analytics dashboard.</div>',
         unsafe_allow_html=True,
     )
 

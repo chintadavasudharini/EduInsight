@@ -13,6 +13,7 @@ env/
 artifacts/models/*.joblib
 artifacts/models/*.pt
 artifacts/data/*.csv
+artifacts/data/*.db
 
 # Streamlit run cache
 .streamlit/

@@ -31,6 +31,12 @@ def render_page():
 
     df = prepare_dataset()
 
+    if st.session_state.get("authenticated", False) and st.session_state.get("user"):
+        user = st.session_state["user"]
+        st.success(f"👋 **Welcome, {user['name']}!** You are signed in as `{user['email']}`. All 14 research laboratory modules are unlocked in the sidebar.")
+    else:
+        st.info("🔐 **Guest Mode:** You are viewing the public overview. Use the left sidebar to **Login** or **Register** to unlock the interactive predictive laboratories.")
+
     # Metric Row
     c1, c2, c3, c4, c5 = st.columns(5)
     with c1:

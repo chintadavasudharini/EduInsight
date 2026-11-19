@@ -1,0 +1,47 @@
+{
+  "model_details": {
+    "name": "Student_Exam_Regressor",
+    "type": "Polynomial Regression (Deg 2)",
+    "version": "1.0.0",
+    "license": "Apache-2.0 / Open Educational Use",
+    "framework": "Scikit-Learn / PyTorch"
+  },
+  "intended_use": {
+    "primary_uses": "Academic performance prediction, early intervention advisement, and study pattern clustering.",
+    "intended_users": "Course instructors, academic advisors, educational researchers.",
+    "out_of_scope_uses": "Automated punitive grading, admissions rejection, high-stakes disciplinary decisions without human oversight."
+  },
+  "factors_and_data": {
+    "features": [
+      "study_hours_per_day",
+      "attendance_percentage",
+      "assignment_score",
+      "previous_exam_score",
+      "sleep_hours"
+    ],
+    "dataset_nature": "Synthetic educational data generated with fixed random seeds for academic rigor.",
+    "training_samples": 1050,
+    "test_samples": 225
+  },
+  "quantitative_metrics": {
+    "MAE": 2.7748613289712294,
+    "RMSE": 3.4986107282212204,
+    "R2": 0.8913614217363678
+  },
+  "hyperparameters": {
+    "pipeline_steps": [
+      "poly",
+      "scaler",
+      "model"
+    ]
+  },
+  "ethical_considerations": {
+    "privacy": "Zero personal identifiable information (PII). All records are synthetically constructed.",
+    "fairness_warning": "Fairness parity metrics on synthetic groups cannot guarantee parity on diverse real-world demographics.",
+    "human_in_the_loop": "Predictions must serve as diagnostic suggestions for advisors, never autonomous grading."
+  },
+  "caveats_and_limitations": {
+    "linear_assumptions": "Linear models cannot capture extreme non-linear burnout dynamics.",
+    "domain_shift": "Performance models trained on typical semesters fail during abrupt schedule shifts without retraining."
+  }
+}

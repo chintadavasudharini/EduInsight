@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Model and Data Artifacts (reproducible via `python -m src.train`)
+artifacts/models/*.joblib
+artifacts/models/*.pt
+artifacts/data/*.csv
+
+# Streamlit run cache
+.streamlit/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env

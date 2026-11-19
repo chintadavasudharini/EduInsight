@@ -41,19 +41,15 @@ def render_register_page():
                 help="Enter a valid institutional or personal email address.",
             )
 
-            # Hide / Unhide Toggle
-            show_pwd = st.checkbox("👁️ Show Password", value=False, key="reg_show_pwd")
-            pwd_type = "default" if show_pwd else "password"
-
             create_password = st.text_input(
                 "Create Password",
-                type=pwd_type,
+                type="password",
                 placeholder="Enter at least 6 characters",
                 help="Create a secure password.",
             )
             confirm_password = st.text_input(
                 "Confirm Password",
-                type=pwd_type,
+                type="password",
                 placeholder="Re-enter password",
                 help="Must match Create Password exactly.",
             )
@@ -112,12 +108,9 @@ def render_login_page():
                 placeholder="e.g. student@academic.edu",
             )
 
-            show_pwd = st.checkbox("👁️ Show Password", value=False, key="login_show_pwd")
-            pwd_type = "default" if show_pwd else "password"
-
             password = st.text_input(
                 "Password",
-                type=pwd_type,
+                type="password",
                 placeholder="Enter your password",
             )
 

@@ -1,4 +1,4 @@
-# Student Performance Prediction and Learning Pattern Analysis Using Applied Mathematics and Machine Learning
+# Student Performance Prediction and Learning Pattern Analysis Using Machine Learning with Applied Mathematics
 
 ![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)
 ![Framework](https://img.shields.io/badge/Framework-PyTorch%20%7C%20Scikit--Learn-orange.svg)

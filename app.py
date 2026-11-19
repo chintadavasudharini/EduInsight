@@ -1,6 +1,6 @@
 """
 Student Performance Prediction and Learning Pattern Analysis
-Using Applied Mathematics and Machine Learning.
+Using Machine Learning with Applied Mathematics.
 
 Main Streamlit Application Entrypoint.
 Comprehensive M.Tech Academic Project covering CO-1 through CO-6.

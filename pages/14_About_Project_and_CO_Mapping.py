@@ -10,7 +10,7 @@ import streamlit as st
 def render_page():
     st.markdown('<div class="main-header">📖 About Project & CO Syllabus Mapping</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="sub-header">M.Tech Academic Project: Student Performance Prediction and Learning Pattern Analysis Using Applied Mathematics and Machine Learning.</div>',
+        '<div class="sub-header">M.Tech Academic Project: Student Performance Prediction and Learning Pattern Analysis Using Machine Learning with Applied Mathematics.</div>',
         unsafe_allow_html=True,
     )
 
@@ -24,7 +24,7 @@ def render_page():
     with tab_overview:
         st.subheader("Executive Project Summary")
         st.markdown("""
-        **Project Title:** Student Performance Prediction and Learning Pattern Analysis Using Applied Mathematics and Machine Learning
+        **Project Title:** Student Performance Prediction and Learning Pattern Analysis Using Machine Learning with Applied Mathematics
 
         **Academic Context:**
         Developed for an advanced M.Tech curriculum bridging rigorous **Applied Mathematics** with modern **Machine Learning & MLOps**.

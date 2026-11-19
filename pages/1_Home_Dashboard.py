@@ -25,7 +25,7 @@ from src.data.loader import prepare_dataset
 def render_page():
     st.markdown('<div class="main-header">🎓 Student Performance & Learning Pattern Analysis</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="sub-header">M.Tech Academic Project integrating Applied Mathematics and Machine Learning (CO-1 to CO-6).</div>',
+        '<div class="sub-header">M.Tech Academic Project: Student Performance Prediction and Learning Pattern Analysis Using Machine Learning with Applied Mathematics (CO-1 to CO-6).</div>',
         unsafe_allow_html=True,
     )
 

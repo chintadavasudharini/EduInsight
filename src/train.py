@@ -1,5 +1,6 @@
 """
 Main Training Pipeline for Student Performance ML Project.
+PROJECT TITLE: Student Performance Prediction and Learning Pattern Analysis Using Machine Learning with Applied Mathematics.
 Executes reproducible end-to-end training:
 1. Generates and splits dataset (Train/Val/Test) with zero leakage.
 2. Fits and serializes preprocessors.

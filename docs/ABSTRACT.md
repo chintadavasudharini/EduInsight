@@ -1,6 +1,6 @@
 # ABSTRACT
 
-**Project Title:** Student Performance Prediction and Learning Pattern Analysis Using Applied Mathematics and Machine Learning  
+**Project Title:** Student Performance Prediction and Learning Pattern Analysis Using Machine Learning with Applied Mathematics  
 **Degree Program:** Master of Technology (M.Tech) in Computer Science & Engineering / Artificial Intelligence and Machine Learning  
 **Domain:** Applied Mathematics, Supervised Learning, Unsupervised Pattern Recognition, Deep Learning Optimization, and Production ML Engineering (MLOps)
 

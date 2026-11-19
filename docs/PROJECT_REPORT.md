@@ -5,7 +5,7 @@
 ## TITLE PAGE TEMPLATE
 
 **PROJECT TITLE:**  
-Student Performance Prediction and Learning Pattern Analysis Using Applied Mathematics and Machine Learning
+Student Performance Prediction and Learning Pattern Analysis Using Machine Learning with Applied Mathematics
 
 **A Project Report Submitted in Partial Fulfillment of the Requirements for the Award of the Degree of**  
 **MASTER OF TECHNOLOGY (M.TECH)**  

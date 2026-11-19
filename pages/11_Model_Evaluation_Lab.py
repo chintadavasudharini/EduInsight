@@ -33,7 +33,7 @@ from src.evaluation.calibration import calibrate_classifier, compute_expected_ca
 
 
 def render_page():
-    st.markdown('<div class="main-header">🎯 Model Evaluation Lab (CO-5)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">🎯 Model Evaluation Lab</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-header">Rigorous performance benchmarking, probability calibration diagrams, and error taxonomies.</div>',
         unsafe_allow_html=True,

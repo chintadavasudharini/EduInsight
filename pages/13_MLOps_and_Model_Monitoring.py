@@ -39,7 +39,7 @@ from src.mlops.versioning import (
 
 
 def render_page():
-    st.markdown('<div class="main-header">🛠️ MLOps & Production Engineering (CO-6)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">🛠️ Model Monitoring & MLOps</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-header">Data drift telemetry, retraining triggers, A/B deployment tests, and model governance cards.</div>',
         unsafe_allow_html=True,

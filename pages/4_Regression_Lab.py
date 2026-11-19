@@ -23,7 +23,7 @@ from src.supervised.search import tune_ridge_regression
 
 
 def render_page():
-    st.markdown('<div class="main-header">📈 Supervised Regression Lab (CO-2)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">📈 Supervised Regression Lab</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-header">Continuous final exam score forecasting using regularized and polynomial linear models.</div>',
         unsafe_allow_html=True,

@@ -33,7 +33,7 @@ from src.supervised.search import tune_random_forest_classifier
 
 
 def render_page():
-    st.markdown('<div class="main-header">🎯 Supervised Classification Lab (CO-2)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">🎯 Supervised Classification Lab</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-header">Multi-class classification into academic tiers: Needs Support, Average, Good, and Excellent.</div>',
         unsafe_allow_html=True,

@@ -27,7 +27,7 @@ from src.unsupervised.clustering import (
 
 
 def render_page():
-    st.markdown('<div class="main-header">👥 Student Clustering & Learning Patterns (CO-3)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">👥 Student Clustering & Learning Patterns</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-header">Unsupervised discovery of behavioral cohorts, study habit archetypes, and density clusters.</div>',
         unsafe_allow_html=True,

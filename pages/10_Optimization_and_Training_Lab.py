@@ -29,7 +29,7 @@ from src.optimization.regularization_lab import (
 
 
 def render_page():
-    st.markdown('<div class="main-header">⚡ Optimization & Training Lab (CO-4)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">⚡ Optimization & Training Lab</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-header">PyTorch deep learning optimizer comparisons, learning-rate schedules, and regularization techniques.</div>',
         unsafe_allow_html=True,

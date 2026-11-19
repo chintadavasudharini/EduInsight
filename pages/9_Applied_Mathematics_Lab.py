@@ -38,7 +38,7 @@ from src.mathematics.calculus_optimization import (
 
 
 def render_page():
-    st.markdown('<div class="main-header">📐 Applied Mathematics Laboratory (CO-1)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">📐 Applied Mathematics Laboratory</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-header">Working mathematical demonstrations using NumPy & SciPy derived directly from student records.</div>',
         unsafe_allow_html=True,

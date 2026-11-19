@@ -28,7 +28,7 @@ from src.unsupervised.embeddings import (
 
 
 def render_page():
-    st.markdown('<div class="main-header">🌌 Dimensionality Reduction & Embeddings (CO-3)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">🌌 Dimensionality Reduction & Embeddings</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-header">Compressing 5D student academic feature space into 2D manifolds & representation embeddings.</div>',
         unsafe_allow_html=True,

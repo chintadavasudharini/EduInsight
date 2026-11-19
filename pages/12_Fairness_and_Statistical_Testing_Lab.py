@@ -36,7 +36,7 @@ from src.evaluation.fairness import compute_fairness_metrics
 
 
 def render_page():
-    st.markdown('<div class="main-header">⚖️ Fairness & Statistical Testing Lab (CO-5)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">⚖️ Fairness & Statistical Testing Lab</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-header">Statistical significance testing between models, advanced cross-validation, and responsible fairness audits.</div>',
         unsafe_allow_html=True,

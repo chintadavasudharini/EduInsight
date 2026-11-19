@@ -24,7 +24,7 @@ from src.unsupervised.anomaly import (
 
 
 def render_page():
-    st.markdown('<div class="main-header">🚨 Anomaly Detection Lab (CO-3)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">🚨 Anomaly Detection Lab</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-header">Detect unusual student behaviors, exam score divergences, and severe burnout profiles.</div>',
         unsafe_allow_html=True,

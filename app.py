@@ -150,7 +150,8 @@ if not st.session_state["authenticated"]:
         render_register_page()
     else:
         # Home Page
-        import pages.1_Home_Dashboard as home_module
+        import importlib
+        home_module = importlib.import_module("pages.1_Home_Dashboard")
         home_module.render_page()
 else:
     target_module_name = nav_map[st.session_state["nav_selection"]]
